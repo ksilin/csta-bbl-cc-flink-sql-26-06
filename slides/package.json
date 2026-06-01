@@ -1,0 +1,20 @@
+{
+  "name": "cc-flink-sql-talk-slides",
+  "private": true,
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.15.2",
+    "@slidev/theme-default": "^0.25.0",
+    "@slidev/theme-seriph": "^0.25.0",
+    "slidev-theme-nord": "latest",
+    "slidev-theme-the-unnamed": "^0.0.23",
+    "vue": "^3.5.34"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.60.0"
+  }
+}

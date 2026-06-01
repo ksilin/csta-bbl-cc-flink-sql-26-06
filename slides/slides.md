@@ -11,13 +11,12 @@ transition: slide-left
 mdc: true
 ---
 
-# Surprise!
+# SELECT Surprise!
 ## Discovering CC Flink SQL
 
 
 <img src="./public/surprise.jpg" class="w-80 mx-auto" />
 <div class="text-xl text-gray-400 mt-4">
-Everybody loves surprises<br/>
 </div>
 
 ---
@@ -28,16 +27,14 @@ Everybody loves surprises<br/>
 
 - My main relevant experience with stream processing: 
   - **Kafka Streams Processor API**
-    - API stays out of your way, few assumptions, full control over state
-    - few surprises
+    - API stays out of your way, few assumptions, full control over state, few surprises
 
   - Some KSQL - rarely a happy story
-    - make it work somehow, never touch again
 
 - **Flink SQL** is different
   - DataStream API exists, but CC doesn't and will not support it
   - Flink SQL is powerful and functional
-  - declarative API - **very abstracted** & **very opinionated**
+  - declarative API - **abstracted** & **very opinionated**
 
 </v-clicks>
 
@@ -238,7 +235,7 @@ COALESCE(customer_id, '') as customer_id,
 
 # Getting customer_id back: value.fields-include
 
-```sql {1}
+```sql {1,2}
 CREATE TABLE `bbl-agg-u2` WITH ('value.format' = 'json-registry',
   'value.fields-include' = 'all')
 AS SELECT
